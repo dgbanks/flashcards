@@ -3,7 +3,7 @@ const express = require('express'); // common js modules, node does not have ES6
 const app = express(); // express is a route handler
 
 app.get('/', (request, response) => {
-  response.send({hi: 'there'});
+  response.send({bye: 'buddy'});
 });
 
 const PORT = process.env.PORT || 5000;
