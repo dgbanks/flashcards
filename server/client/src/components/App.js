@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 
 import * as actions from '../actions';
 import Header from './header';
-import Dashboard from './dashboard';
+import { Dashboard } from './dashboard';
+
 const Landing = () => <h2>Tryna make some flashcards?</h2>;
 
 class App extends React.Component {
@@ -19,14 +20,12 @@ class App extends React.Component {
         <div>
           <Header />
           <Route exact path="/" component={Landing} />
-          <Route path="/dashboard" component={Dashboard} />
+          <Route exact path="/dashboard" component={Dashboard} />
         </div>
       </BrowserRouter>
       </div>
     );
   }
 }
-
-
 
 export default connect(null, actions)(App);

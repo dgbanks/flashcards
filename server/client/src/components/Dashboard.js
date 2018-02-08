@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Dashboard = () => {
+export const Dashboard = () => {
   return (
     <div style={{ textAlign: 'center' }}>
       <h1>WELCOME, NERDS</h1>
@@ -8,5 +8,3 @@ const Dashboard = () => {
     </div>
   );
 };
-
-export default Dashboard;
