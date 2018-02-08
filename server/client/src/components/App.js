@@ -3,9 +3,9 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import * as actions from '../actions';
-import Header from './Header';
-import Dashboard from './Dashboard';
-const Landing = () => <h2>Tryna make some flashcards?</h2>
+import Header from './header';
+import Dashboard from './dashboard';
+const Landing = () => <h2>Tryna make some flashcards?</h2>;
 
 class App extends React.Component {
   componentDidMount() {

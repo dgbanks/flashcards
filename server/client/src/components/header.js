@@ -20,7 +20,7 @@ class Header extends React.Component {
       <nav>
         <div className="nav-wrapper">
           <Link
-            to={this.props.auth ? '/dashboard' : '/'} 
+            to={this.props.auth ? '/dashboard' : '/'}
             className="left brand-logo"
           >
             Flashcards
@@ -38,4 +38,4 @@ function mapStateToProps({ auth }) {
   return { auth };
 }
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps, null)(Header);
