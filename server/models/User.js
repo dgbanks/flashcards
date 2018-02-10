@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
-const { Schema } = mongoose; // mongoose enforces schema because mongoDB doesn't care
-const { deckSchema } = require('./Deck');
+const { Schema } = mongoose;
 
 const userSchema = new Schema({
   googleId: String,
   firstName: String,
-  decks: [deckSchema]
+  favoriteDecks: [Schema.Types.ObjectId]
 });
 
 mongoose.model('users', userSchema);
